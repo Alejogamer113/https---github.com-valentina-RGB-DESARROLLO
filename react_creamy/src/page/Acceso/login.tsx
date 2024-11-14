@@ -44,6 +44,8 @@ const AuthPage: React.FC = () => {
         });
         setToken(response.data.token);
 
+//Alejo es un crack
+
         if (response.data.resUser[0].ID_rol === 2) {
           toast.success('Inicio de sesión exitoso', { duration: 2000 });
           navigate("/principal");
